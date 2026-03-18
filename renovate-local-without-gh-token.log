@@ -1,0 +1,2237 @@
+ INFO: Renovate started
+       "renovateVersion": "43.76.2"
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /usr/src/app/local-repo/renovate.json
+DEBUG: No additional config file found specified - skipping
+DEBUG: File config
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": ["config:recommended"]
+       }
+DEBUG: Additional file config
+       "config": {}
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {"hostRules": [], "onboarding": false, "platform": "local"}
+DEBUG: Resolved global extends
+       "config": undefined
+DEBUG: Combined config
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": ["config:recommended"],
+         "hostRules": [],
+         "onboarding": false,
+         "platform": "local"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+DEBUG: Found valid git version: 2.53.0
+DEBUG: Setting global hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+ INFO: Repository started (repository=local)
+       "renovateVersion": "43.76.2"
+DEBUG: Using localDir: /usr/src/app (repository=local)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=local)
+DEBUG: Resetting npmrc (repository=local)
+DEBUG: Resetting npmrc (repository=local)
+DEBUG: checkOnboarding() (repository=local)
+DEBUG: isOnboarded() (repository=local)
+DEBUG: Repo is onboarded (repository=local)
+DEBUG: Could not get file list using git, using glob instead (repository=local)
+DEBUG: No renovate config file found (repository=local)
+DEBUG: migrateAndValidate() (repository=local)
+DEBUG: No config migration necessary (repository=local)
+DEBUG: Found repo ignorePaths (repository=local)
+       "ignorePaths": [
+         "**/node_modules/**",
+         "**/bower_components/**",
+         "**/vendor/**",
+         "**/examples/**",
+         "**/__tests__/**",
+         "**/test/**",
+         "**/tests/**",
+         "**/__fixtures__/**"
+       ]
+DEBUG: No vulnerability alerts found (repository=local)
+DEBUG: No baseBranches (repository=local)
+DEBUG: extract() (repository=local)
+DEBUG: Could not get file list using git, using glob instead (repository=local)
+DEBUG: Using file pattern: /(^|/)tasks/[^/]+\.ya?ml$/ for manager ansible (repository=local)
+DEBUG: Using file pattern: /(^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$/ for manager ansible-galaxy (repository=local)
+DEBUG: Using file pattern: /(^|/)\.tool-versions$/ for manager asdf (repository=local)
+DEBUG: Using file pattern: /(^|/).azuredevops/.+\.ya?ml$/ for manager azure-pipelines (repository=local)
+DEBUG: Using file pattern: /azure.*pipelines?.*\.ya?ml$/ for manager azure-pipelines (repository=local)
+DEBUG: Using file pattern: /(^|/)batect(-bundle)?\.ya?ml$/ for manager batect (repository=local)
+DEBUG: Using file pattern: /(^|/)batect$/ for manager batect-wrapper (repository=local)
+DEBUG: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel (repository=local)
+DEBUG: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel (repository=local)
+DEBUG: Using file pattern: /\.bzl$/ for manager bazel (repository=local)
+DEBUG: Using file pattern: /(^|/|\.)MODULE\.bazel$/ for manager bazel-module (repository=local)
+DEBUG: Using file pattern: /(^|/)\.bazelversion$/ for manager bazelisk (repository=local)
+DEBUG: Using file pattern: /\.bicep$/ for manager bicep (repository=local)
+DEBUG: Using file pattern: /(^|/)\.?bitbucket-pipelines\.ya?ml$/ for manager bitbucket-pipelines (repository=local)
+DEBUG: Using file pattern: /(^|/)bitrise\.ya?ml$/ for manager bitrise (repository=local)
+DEBUG: Using file pattern: /buildkite\.ya?ml/ for manager buildkite (repository=local)
+DEBUG: Using file pattern: /\.buildkite/.+\.ya?ml$/ for manager buildkite (repository=local)
+DEBUG: Using file pattern: /(^|/)project\.toml$/ for manager buildpacks (repository=local)
+DEBUG: Using file pattern: /(^|/)bun\.lockb?$/ for manager bun (repository=local)
+DEBUG: Using file pattern: /(^|/)package\.json$/ for manager bun (repository=local)
+DEBUG: Using file pattern: /(^|/)\.bun-version$/ for manager bun-version (repository=local)
+DEBUG: Using file pattern: /(^|/)Gemfile$/ for manager bundler (repository=local)
+DEBUG: Using file pattern: /\.cake$/ for manager cake (repository=local)
+DEBUG: Using file pattern: /(^|/)Cargo\.toml$/ for manager cargo (repository=local)
+DEBUG: Using file pattern: /(^|/)\.circleci/.+\.ya?ml$/ for manager circleci (repository=local)
+DEBUG: Using file pattern: /(^|/)cloudbuild\.ya?ml/ for manager cloudbuild (repository=local)
+DEBUG: Using file pattern: /(^|/)Podfile$/ for manager cocoapods (repository=local)
+DEBUG: Using file pattern: /(^|/)([\w-]*)composer\.json$/ for manager composer (repository=local)
+DEBUG: Using file pattern: /(^|/)conanfile\.(txt|py)$/ for manager conan (repository=local)
+DEBUG: Using file pattern: /(^|/)\.copier-answers(\..+)?\.ya?ml/ for manager copier (repository=local)
+DEBUG: Using file pattern: /(^|/)cpanfile$/ for manager cpanfile (repository=local)
+DEBUG: Using file pattern: /^\.crow(?:/[^/]+)?\.ya?ml$/ for manager crow (repository=local)
+DEBUG: Using file pattern: /(^|/)(?:deps|bb)\.edn$/ for manager deps-edn (repository=local)
+DEBUG: Using file pattern: /(^|/)devbox\.json$/ for manager devbox (repository=local)
+DEBUG: Using file pattern: /^.devcontainer/devcontainer.json$/ for manager devcontainer (repository=local)
+DEBUG: Using file pattern: /^.devcontainer.json$/ for manager devcontainer (repository=local)
+DEBUG: Using file pattern: /(^|/)(?:docker-)?compose[^/]*\.ya?ml$/ for manager docker-compose (repository=local)
+DEBUG: Using file pattern: /(^|/|\.)([Dd]ocker|[Cc]ontainer)file$/ for manager dockerfile (repository=local)
+DEBUG: Using file pattern: /(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/ for manager dockerfile (repository=local)
+DEBUG: Using file pattern: /(^|/)\.drone\.yml$/ for manager droneci (repository=local)
+DEBUG: Using file pattern: /(^|/)fleet\.ya?ml/ for manager fleet (repository=local)
+DEBUG: Using file pattern: /(?:^|/)gotk-components\.ya?ml$/ for manager flux (repository=local)
+DEBUG: Using file pattern: /(^|/)\.fvm/fvm_config\.json$/ for manager fvm (repository=local)
+DEBUG: Using file pattern: /(^|/)\.fvmrc$/ for manager fvm (repository=local)
+DEBUG: Using file pattern: /(^|/)\.gitmodules$/ for manager git-submodules (repository=local)
+DEBUG: Using file pattern: /(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/ for manager github-actions (repository=local)
+DEBUG: Using file pattern: /(^|/)action\.ya?ml$/ for manager github-actions (repository=local)
+DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci (repository=local)
+DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci-include (repository=local)
+DEBUG: Using file pattern: /(^|/)gleam.toml$/ for manager gleam (repository=local)
+DEBUG: Using file pattern: /(^|/)go\.mod$/ for manager gomod (repository=local)
+DEBUG: Using file pattern: /\.gradle(\.kts)?$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)gradle\.properties$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)gradle/.+\.toml$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)buildSrc/.+\.kt$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /\.versions\.toml$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)versions.props$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)versions.lock$/ for manager gradle (repository=local)
+DEBUG: Using file pattern: /(^|/)gradle/wrapper/gradle-wrapper\.properties$/ for manager gradle-wrapper (repository=local)
+DEBUG: Using file pattern: /\.cabal$/ for manager haskell-cabal (repository=local)
+DEBUG: Using file pattern: /(^|/)requirements\.ya?ml$/ for manager helm-requirements (repository=local)
+DEBUG: Using file pattern: /(^|/)values\.ya?ml$/ for manager helm-values (repository=local)
+DEBUG: Using file pattern: /(^|/)helmfile\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=local)
+DEBUG: Using file pattern: /(^|/)helmfile\.d/.+\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=local)
+DEBUG: Using file pattern: /(^|/)Chart\.ya?ml$/ for manager helmv3 (repository=local)
+DEBUG: Using file pattern: /(^|/)bin/hermit$/ for manager hermit (repository=local)
+DEBUG: Using file pattern: /(^|/)manifest\.json$/ for manager homeassistant-manifest (repository=local)
+DEBUG: Using file pattern: /^Formula/[^/]+[.]rb$/ for manager homebrew (repository=local)
+DEBUG: Using file pattern: /\.html?$/ for manager html (repository=local)
+DEBUG: Using file pattern: /(^|/)plugins\.(txt|ya?ml)$/ for manager jenkins (repository=local)
+DEBUG: Using file pattern: /(^|/)jsonnetfile\.json$/ for manager jsonnet-bundler (repository=local)
+DEBUG: Using file pattern: /^.+\.main\.kts$/ for manager kotlin-script (repository=local)
+DEBUG: Using file pattern: /(^|/)kustomization\.ya?ml$/ for manager kustomize (repository=local)
+DEBUG: Using file pattern: /(^|/)project\.clj$/ for manager leiningen (repository=local)
+DEBUG: Using file pattern: /(^|/|\.)pom\.xml$/ for manager maven (repository=local)
+DEBUG: Using file pattern: /^(((\.mvn)|(\.m2))/)?settings\.xml$/ for manager maven (repository=local)
+DEBUG: Using file pattern: /(^|/)\.mvn/extensions\.xml$/ for manager maven (repository=local)
+DEBUG: Using file pattern: /(^|\/).mvn/wrapper/maven-wrapper.properties$/ for manager maven-wrapper (repository=local)
+DEBUG: Using file pattern: /(^|\/)mvnw(.cmd)?$/ for manager maven-wrapper (repository=local)
+DEBUG: Using file pattern: /(^|/)package\.js$/ for manager meteor (repository=local)
+DEBUG: Using file pattern: /(^|/)Mintfile$/ for manager mint (repository=local)
+DEBUG: Using file pattern: **/{,.}mise{,.*}.toml for manager mise (repository=local)
+DEBUG: Using file pattern: **/{,.}mise/config{,.*}.toml for manager mise (repository=local)
+DEBUG: Using file pattern: **/.config/mise{,.*}.toml for manager mise (repository=local)
+DEBUG: Using file pattern: **/.config/mise/{mise,config}{,.*}.toml for manager mise (repository=local)
+DEBUG: Using file pattern: **/.config/mise/conf.d/*.toml for manager mise (repository=local)
+DEBUG: Using file pattern: **/.rtx{,.*}.toml for manager mise (repository=local)
+DEBUG: Using file pattern: /(^|/)mix\.exs$/ for manager mix (repository=local)
+DEBUG: Using file pattern: /(^|/)flake\.nix$/ for manager nix (repository=local)
+DEBUG: Using file pattern: /(^|/)\.node-version$/ for manager nodenv (repository=local)
+DEBUG: Using file pattern: /(^|/)package\.json$/ for manager npm (repository=local)
+DEBUG: Using file pattern: /(^|/)pnpm-workspace\.yaml$/ for manager npm (repository=local)
+DEBUG: Using file pattern: /(^|/)\.yarnrc\.yml$/ for manager npm (repository=local)
+DEBUG: Using file pattern: /\.(?:cs|fs|vb)proj$/ for manager nuget (repository=local)
+DEBUG: Using file pattern: /\.(?:props|targets)$/ for manager nuget (repository=local)
+DEBUG: Using file pattern: /(^|/)dotnet-tools\.json$/ for manager nuget (repository=local)
+DEBUG: Using file pattern: /(^|/)global\.json$/ for manager nuget (repository=local)
+DEBUG: Using file pattern: /(^|/)\.nvmrc$/ for manager nvm (repository=local)
+DEBUG: Using file pattern: /(^|/)src/main/features/.+\.json$/ for manager osgi (repository=local)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pep621 (repository=local)
+DEBUG: Using file pattern: /(^|/)[\w-]*requirements([-._]\w+)?\.(txt|pip)$/ for manager pip_requirements (repository=local)
+DEBUG: Using file pattern: /(^|/)setup\.py$/ for manager pip_setup (repository=local)
+DEBUG: Using file pattern: /(^|/)Pipfile$/ for manager pipenv (repository=local)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pixi (repository=local)
+DEBUG: Using file pattern: /(^|/)pixi\.toml$/ for manager pixi (repository=local)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager poetry (repository=local)
+DEBUG: Using file pattern: /(^|/)\.pre-commit-config\.ya?ml$/ for manager pre-commit (repository=local)
+DEBUG: Using file pattern: /(^|/)pubspec\.ya?ml$/ for manager pub (repository=local)
+DEBUG: Using file pattern: /(^|/)Puppetfile$/ for manager puppet (repository=local)
+DEBUG: Using file pattern: /(^|/)\.python-version$/ for manager pyenv (repository=local)
+DEBUG: Using file pattern: /.+\.container$/ for manager quadlet (repository=local)
+DEBUG: Using file pattern: /.+\.image$/ for manager quadlet (repository=local)
+DEBUG: Using file pattern: /.+\.volume$/ for manager quadlet (repository=local)
+DEBUG: Using file pattern: renovate.json for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: renovate.json5 for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .github/renovate.json for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .github/renovate.json5 for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .gitlab/renovate.json for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .gitlab/renovate.json5 for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .renovaterc for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .renovaterc.json for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: .renovaterc.json5 for manager renovate-config-presets (repository=local)
+DEBUG: Using file pattern: /(^|/)\.ruby-version$/ for manager ruby-version (repository=local)
+DEBUG: Using file pattern: /(^|/)runtime.txt$/ for manager runtime-version (repository=local)
+DEBUG: Using file pattern: /\.sbt$/ for manager sbt (repository=local)
+DEBUG: Using file pattern: /project/[^/]*\.scala$/ for manager sbt (repository=local)
+DEBUG: Using file pattern: /project/build\.properties$/ for manager sbt (repository=local)
+DEBUG: Using file pattern: /(^|/)repositories$/ for manager sbt (repository=local)
+DEBUG: Using file pattern: /(^|/)\.scalafmt.conf$/ for manager scalafmt (repository=local)
+DEBUG: Using file pattern: /(^|/)setup\.cfg$/ for manager setup-cfg (repository=local)
+DEBUG: Using file pattern: /(^|/)Package\.swift/ for manager swift (repository=local)
+DEBUG: Using file pattern: **/*.tf for manager terraform (repository=local)
+DEBUG: Using file pattern: **/*.tofu for manager terraform (repository=local)
+DEBUG: Using file pattern: /(^|/)\.terraform-version$/ for manager terraform-version (repository=local)
+DEBUG: Using file pattern: /(^|/)terragrunt\.hcl$/ for manager terragrunt (repository=local)
+DEBUG: Using file pattern: /(^|/)\.terragrunt-version$/ for manager terragrunt-version (repository=local)
+DEBUG: Using file pattern: /\.tflint\.hcl$/ for manager tflint-plugin (repository=local)
+DEBUG: Using file pattern: /^\.travis\.ya?ml$/ for manager travis (repository=local)
+DEBUG: Using file pattern: /\.typ$/ for manager typst (repository=local)
+DEBUG: Using file pattern: **/ProjectSettings/ProjectVersion.txt for manager unity3d (repository=local)
+DEBUG: Using file pattern: /(^|/)\.vela\.ya?ml$/ for manager velaci (repository=local)
+DEBUG: Using file pattern: /(^|/)vendir\.yml$/ for manager vendir (repository=local)
+DEBUG: Using file pattern: /^\.woodpecker(?:/[^/]+)?\.ya?ml$/ for manager woodpecker (repository=local)
+DEBUG: Using file pattern: **/{j,t}sconfig.json for manager regex (repository=local)
+DEBUG: Using file pattern: **/{j,t}sconfig.*.json for manager regex (repository=local)
+DEBUG: Matched 62 file(s) for manager terraform: local-repo/iac/part01-base/avm.log_analytics_workspace.tf, local-repo/iac/part01-base/locals.tf, local-repo/iac/part01-base/main.tf, local-repo/iac/part01-base/outputs.tf, local-repo/iac/part01-base/terraform.tf, local-repo/iac/part01-base/variables.tf, local-repo/iac/part02-virtual-network/avm.ip_addresses.tf, local-repo/iac/part02-virtual-network/avm.log_analytics_workspace.tf, local-repo/iac/part02-virtual-network/avm.nat_gateway.tf, local-repo/iac/part02-virtual-network/avm.network_security_group.tf, local-repo/iac/part02-virtual-network/avm.virtual_network.tf, local-repo/iac/part02-virtual-network/locals.tf, local-repo/iac/part02-virtual-network/main.tf, local-repo/iac/part02-virtual-network/outputs.tf, local-repo/iac/part02-virtual-network/terraform.tf, local-repo/iac/part02-virtual-network/variables.tf, local-repo/iac/part03-key-vault/avm.ip_addresses.tf, local-repo/iac/part03-key-vault/avm.key_vault.tf, local-repo/iac/part03-key-vault/avm.log_analytics_workspace.tf, local-repo/iac/part03-key-vault/avm.nat_gateway.tf, local-repo/iac/part03-key-vault/avm.network_security_group.tf, local-repo/iac/part03-key-vault/avm.private_dns.tf, local-repo/iac/part03-key-vault/avm.virtual_network.tf, local-repo/iac/part03-key-vault/data.tf, local-repo/iac/part03-key-vault/locals.tf, local-repo/iac/part03-key-vault/main.tf, local-repo/iac/part03-key-vault/outputs.tf, local-repo/iac/part03-key-vault/terraform.tf, local-repo/iac/part03-key-vault/variables.tf, local-repo/iac/part04-storage-account/avm.ip_addresses.tf, local-repo/iac/part04-storage-account/avm.key_vault.tf, local-repo/iac/part04-storage-account/avm.log_analytics_workspace.tf, local-repo/iac/part04-storage-account/avm.nat_gateway.tf, local-repo/iac/part04-storage-account/avm.network_security_group.tf, local-repo/iac/part04-storage-account/avm.private_dns.tf, local-repo/iac/part04-storage-account/avm.storage_account.tf, local-repo/iac/part04-storage-account/avm.user_assigned_managed_identity.tf, local-repo/iac/part04-storage-account/avm.virtual_network.tf, local-repo/iac/part04-storage-account/data.tf, local-repo/iac/part04-storage-account/locals.tf, local-repo/iac/part04-storage-account/main.tf, local-repo/iac/part04-storage-account/outputs.tf, local-repo/iac/part04-storage-account/terraform.tf, local-repo/iac/part04-storage-account/variables.tf, local-repo/iac/part05-virtual-machine/avm.bastion_host.tf, local-repo/iac/part05-virtual-machine/avm.ip_addresses.tf, local-repo/iac/part05-virtual-machine/avm.key_vault.tf, local-repo/iac/part05-virtual-machine/avm.log_analytics_workspace.tf, local-repo/iac/part05-virtual-machine/avm.nat_gateway.tf, local-repo/iac/part05-virtual-machine/avm.network_security_group.tf, local-repo/iac/part05-virtual-machine/avm.private_dns.tf, local-repo/iac/part05-virtual-machine/avm.public_ip_address.tf, local-repo/iac/part05-virtual-machine/avm.storage_account.tf, local-repo/iac/part05-virtual-machine/avm.user_assigned_managed_identity.tf, local-repo/iac/part05-virtual-machine/avm.virtual_machine.tf, local-repo/iac/part05-virtual-machine/avm.virtual_network.tf, local-repo/iac/part05-virtual-machine/data.tf, local-repo/iac/part05-virtual-machine/locals.tf, local-repo/iac/part05-virtual-machine/main.tf, local-repo/iac/part05-virtual-machine/outputs.tf, local-repo/iac/part05-virtual-machine/terraform.tf, local-repo/iac/part05-virtual-machine/variables.tf (repository=local)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part01-base/locals.tf)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part01-base/variables.tf)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part02-virtual-network/variables.tf)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part03-key-vault/variables.tf)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part04-storage-account/variables.tf)
+DEBUG: preflight content check has not found any relevant content (repository=local, packageFile=local-repo/iac/part05-virtual-machine/variables.tf)
+DEBUG: manager extract durations (ms) (repository=local)
+       "managers": {"terraform": 125}
+DEBUG: Found terraform package files (repository=local)
+DEBUG: Found 47 package file(s) (repository=local)
+ INFO: Dependency extraction complete (repository=local)
+       "stats": {
+         "managers": {"terraform": {"fileCount": 47, "depCount": 67}},
+         "total": {"fileCount": 47, "depCount": 67}
+       }
+ WARN: GitHub token is required for some dependencies (repository=local)
+       "githubDeps": ["hashicorp/terraform"]
+DEBUG: hostRules: no authentication for registry.terraform.io (repository=local)
+DEBUG: Using queue: host=registry.terraform.io, concurrency=16 (repository=local)
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=local)
+DEBUG: Package releases lookups complete (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-operationalinsights-workspace/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-resources-resourcegroup/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-utl-network-ip-addresses/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-natgateway/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-networksecuritygroup/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-virtualnetwork/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-keyvault-vault/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-privatednszone/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-utl-regions/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-storage-storageaccount/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-managedidentity-userassignedidentity/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-bastionhost/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-network-publicipaddress/azurerm (repository=local)
+DEBUG: LibYears: no currentVersionTimestamp for Azure/avm-res-compute-virtualmachine/azurerm (repository=local)
+DEBUG: Repository libYears (repository=local)
+       "libYears": {"managers": {"terraform": 0}, "total": 0},
+       "dependencyStatus": {"outdated": 16, "total": 22}
+DEBUG: branchifyUpgrades (repository=local)
+DEBUG: detectSemanticCommits() (repository=local)
+DEBUG: getCommitMessages (repository=local)
+DEBUG: semanticCommits: detected "unknown" (repository=local)
+DEBUG: semanticCommits: disabled (repository=local)
+DEBUG: 44 flattened updates found: Azure/avm-res-operationalinsights-workspace/azurerm, Azure/avm-res-resources-resourcegroup/azurerm, Azure/avm-utl-network-ip-addresses/azurerm, Azure/avm-res-operationalinsights-workspace/azurerm, Azure/avm-res-network-natgateway/azurerm, Azure/avm-res-network-networksecuritygroup/azurerm, Azure/avm-res-network-virtualnetwork/azurerm, Azure/avm-res-resources-resourcegroup/azurerm, Azure/avm-utl-network-ip-addresses/azurerm, Azure/avm-res-keyvault-vault/azurerm, Azure/avm-res-operationalinsights-workspace/azurerm, Azure/avm-res-network-natgateway/azurerm, Azure/avm-res-network-networksecuritygroup/azurerm, Azure/avm-res-network-privatednszone/azurerm, Azure/avm-res-network-virtualnetwork/azurerm, Azure/avm-utl-regions/azurerm, Azure/avm-res-resources-resourcegroup/azurerm, Azure/avm-utl-network-ip-addresses/azurerm, Azure/avm-res-keyvault-vault/azurerm, Azure/avm-res-operationalinsights-workspace/azurerm, Azure/avm-res-network-natgateway/azurerm, Azure/avm-res-network-networksecuritygroup/azurerm, Azure/avm-res-network-privatednszone/azurerm, Azure/avm-res-network-privatednszone/azurerm, Azure/avm-res-storage-storageaccount/azurerm, Azure/avm-res-managedidentity-userassignedidentity/azurerm, Azure/avm-res-network-virtualnetwork/azurerm, Azure/avm-utl-regions/azurerm, Azure/avm-res-resources-resourcegroup/azurerm, Azure/avm-res-network-bastionhost/azurerm, Azure/avm-utl-network-ip-addresses/azurerm, Azure/avm-res-keyvault-vault/azurerm, Azure/avm-res-operationalinsights-workspace/azurerm, Azure/avm-res-network-natgateway/azurerm, Azure/avm-res-network-networksecuritygroup/azurerm, Azure/avm-res-network-privatednszone/azurerm, Azure/avm-res-network-privatednszone/azurerm, Azure/avm-res-network-publicipaddress/azurerm, Azure/avm-res-storage-storageaccount/azurerm, Azure/avm-res-managedidentity-userassignedidentity/azurerm, Azure/avm-res-compute-virtualmachine/azurerm, Azure/avm-res-network-virtualnetwork/azurerm, Azure/avm-utl-regions/azurerm, Azure/avm-res-resources-resourcegroup/azurerm (repository=local)
+DEBUG: Returning 14 branch(es) (repository=local)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-utl-network-ip-addresses-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-natgateway-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-networksecuritygroup-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-virtualnetwork-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-keyvault-vault-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-privatednszone-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-utl-regions-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-storage-storageaccount-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-managedidentity-userassignedidentity-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-bastionhost-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-network-publicipaddress-azurerm-0.x)
+DEBUG: Branch is not pending, removing pending upgrades (repository=local, branch=renovate/azure-avm-res-compute-virtualmachine-azurerm-0.x)
+DEBUG: config.repoIsOnboarded=true (repository=local)
+DEBUG: packageFiles with updates (repository=local)
+       "config": {
+         "terraform": [
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2025-12-23T11:11:53.146Z",
+                     "newVersionAgeInDays": 85,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-operationalinsights-workspace",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "mostRecentTimestamp": "2025-12-23T11:11:53.146Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part01-base/avm.log_analytics_workspace.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.2",
+                     "newValue": "0.2.2",
+                     "releaseTimestamp": "2026-01-23T15:25:39.461Z",
+                     "newVersionAgeInDays": 53,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-resources-resourcegroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T15:25:39.461Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part01-base/main.tf"
+           },
+           {
+             "deps": [
+               {
+                 "currentValue": "~> 4.19",
+                 "depType": "required_provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-azurerm",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/azurerm",
+                 "mostRecentTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersion": "4.64.0",
+                 "currentVersionTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersionAgeInDays": 5
+               },
+               {
+                 "currentValue": "~> 3.6",
+                 "depType": "required_provider",
+                 "depName": "random",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/random",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-random",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/random",
+                 "mostRecentTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersion": "3.8.1",
+                 "currentVersionTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersionAgeInDays": 49
+               },
+               {
+                 "currentValue": "~> 1.10",
+                 "depType": "required_version",
+                 "datasource": "github-releases",
+                 "depName": "hashicorp/terraform",
+                 "extractVersion": "v(?<version>.*)$",
+                 "versioning": "hashicorp",
+                 "skipReason": "github-token-required",
+                 "updates": [],
+                 "packageName": "hashicorp/terraform"
+               },
+               {
+                 "depType": "provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "skipReason": "unspecified-version",
+                 "updates": []
+               }
+             ],
+             "packageFile": "local-repo/iac/part01-base/terraform.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.1.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.1.1",
+                     "newValue": "0.1.1",
+                     "releaseTimestamp": "2026-03-11T07:37:48.124Z",
+                     "newVersionAgeInDays": 7,
+                     "newMajor": 0,
+                     "newMinor": 1,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-network-ip-addresses-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-network-ip-addresses",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-network-ip-addresses/azurerm",
+                 "mostRecentTimestamp": "2026-03-11T07:37:48.124Z",
+                 "currentVersion": "0.1.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.1.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/avm.ip_addresses.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2025-12-23T11:11:53.146Z",
+                     "newVersionAgeInDays": 85,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-operationalinsights-workspace",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "mostRecentTimestamp": "2025-12-23T11:11:53.146Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/avm.log_analytics_workspace.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-natgateway/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.3.2",
+                     "newValue": "0.3.2",
+                     "releaseTimestamp": "2026-02-22T08:30:54.552Z",
+                     "newVersionAgeInDays": 24,
+                     "newMajor": 0,
+                     "newMinor": 3,
+                     "newPatch": 2,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-natgateway-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-natgateway/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-natgateway",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-natgateway/azurerm",
+                 "mostRecentTimestamp": "2026-02-22T08:30:54.552Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/avm.nat_gateway.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2026-01-15T12:36:57.773Z",
+                     "newVersionAgeInDays": 61,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-networksecuritygroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-15T12:36:57.773Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/avm.network_security_group.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.14.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.17.1",
+                     "newValue": "0.17.1",
+                     "releaseTimestamp": "2026-01-19T09:10:59.901Z",
+                     "newVersionAgeInDays": 58,
+                     "newMajor": 0,
+                     "newMinor": 17,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-virtualnetwork-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-virtualnetwork/azurerm",
+                 "mostRecentTimestamp": "2026-01-19T09:10:59.901Z",
+                 "currentVersion": "0.14.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.14.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/avm.virtual_network.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.2",
+                     "newValue": "0.2.2",
+                     "releaseTimestamp": "2026-01-23T15:25:39.461Z",
+                     "newVersionAgeInDays": 53,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-resources-resourcegroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T15:25:39.461Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/main.tf"
+           },
+           {
+             "deps": [
+               {
+                 "currentValue": "~> 4.19",
+                 "depType": "required_provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-azurerm",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/azurerm",
+                 "mostRecentTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersion": "4.64.0",
+                 "currentVersionTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersionAgeInDays": 5
+               },
+               {
+                 "currentValue": "~> 3.6",
+                 "depType": "required_provider",
+                 "depName": "random",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/random",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-random",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/random",
+                 "mostRecentTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersion": "3.8.1",
+                 "currentVersionTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersionAgeInDays": 49
+               },
+               {
+                 "currentValue": "~> 1.10",
+                 "depType": "required_version",
+                 "datasource": "github-releases",
+                 "depName": "hashicorp/terraform",
+                 "extractVersion": "v(?<version>.*)$",
+                 "versioning": "hashicorp",
+                 "skipReason": "github-token-required",
+                 "updates": [],
+                 "packageName": "hashicorp/terraform"
+               },
+               {
+                 "depType": "provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "skipReason": "unspecified-version",
+                 "updates": []
+               }
+             ],
+             "packageFile": "local-repo/iac/part02-virtual-network/terraform.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.1.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.1.1",
+                     "newValue": "0.1.1",
+                     "releaseTimestamp": "2026-03-11T07:37:48.124Z",
+                     "newVersionAgeInDays": 7,
+                     "newMajor": 0,
+                     "newMinor": 1,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-network-ip-addresses-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-network-ip-addresses",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-network-ip-addresses/azurerm",
+                 "mostRecentTimestamp": "2026-03-11T07:37:48.124Z",
+                 "currentVersion": "0.1.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.1.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.ip_addresses.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.10.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.10.2",
+                     "newValue": "0.10.2",
+                     "releaseTimestamp": "2025-10-14T14:56:24.582Z",
+                     "newVersionAgeInDays": 154,
+                     "newMajor": 0,
+                     "newMinor": 10,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-keyvault-vault-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-keyvault-vault",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-keyvault-vault/azurerm",
+                 "mostRecentTimestamp": "2025-10-14T14:56:24.582Z",
+                 "currentVersion": "0.10.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.10.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.key_vault.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2025-12-23T11:11:53.146Z",
+                     "newVersionAgeInDays": 85,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-operationalinsights-workspace",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "mostRecentTimestamp": "2025-12-23T11:11:53.146Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.log_analytics_workspace.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-natgateway/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.3.2",
+                     "newValue": "0.3.2",
+                     "releaseTimestamp": "2026-02-22T08:30:54.552Z",
+                     "newVersionAgeInDays": 24,
+                     "newMajor": 0,
+                     "newMinor": 3,
+                     "newPatch": 2,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-natgateway-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-natgateway/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-natgateway",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-natgateway/azurerm",
+                 "mostRecentTimestamp": "2026-02-22T08:30:54.552Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.nat_gateway.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2026-01-15T12:36:57.773Z",
+                     "newVersionAgeInDays": 61,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-networksecuritygroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-15T12:36:57.773Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.network_security_group.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-02-12T05:37:53.069Z",
+                     "newVersionAgeInDays": 34,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-privatednszone-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-privatednszone",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-privatednszone/azurerm",
+                 "mostRecentTimestamp": "2026-02-12T05:37:53.069Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.private_dns.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.14.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.17.1",
+                     "newValue": "0.17.1",
+                     "releaseTimestamp": "2026-01-19T09:10:59.901Z",
+                     "newVersionAgeInDays": 58,
+                     "newMajor": 0,
+                     "newMinor": 17,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-virtualnetwork-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-virtualnetwork/azurerm",
+                 "mostRecentTimestamp": "2026-01-19T09:10:59.901Z",
+                 "currentVersion": "0.14.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.14.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/avm.virtual_network.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-regions/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.12.0",
+                     "newValue": "0.12.0",
+                     "releaseTimestamp": "2026-03-13T16:11:47.949Z",
+                     "newVersionAgeInDays": 4,
+                     "newMajor": 0,
+                     "newMinor": 12,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-regions-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-regions/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-regions",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-regions/azurerm",
+                 "mostRecentTimestamp": "2026-03-13T16:11:47.949Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/data.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.2",
+                     "newValue": "0.2.2",
+                     "releaseTimestamp": "2026-01-23T15:25:39.461Z",
+                     "newVersionAgeInDays": 53,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-resources-resourcegroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T15:25:39.461Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/main.tf"
+           },
+           {
+             "deps": [
+               {
+                 "currentValue": "~> 4.19",
+                 "depType": "required_provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-azurerm",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/azurerm",
+                 "mostRecentTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersion": "4.64.0",
+                 "currentVersionTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersionAgeInDays": 5
+               },
+               {
+                 "currentValue": "~> 3.6",
+                 "depType": "required_provider",
+                 "depName": "random",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/random",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-random",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/random",
+                 "mostRecentTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersion": "3.8.1",
+                 "currentVersionTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersionAgeInDays": 49
+               },
+               {
+                 "currentValue": "~> 1.10",
+                 "depType": "required_version",
+                 "datasource": "github-releases",
+                 "depName": "hashicorp/terraform",
+                 "extractVersion": "v(?<version>.*)$",
+                 "versioning": "hashicorp",
+                 "skipReason": "github-token-required",
+                 "updates": [],
+                 "packageName": "hashicorp/terraform"
+               },
+               {
+                 "depType": "provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "skipReason": "unspecified-version",
+                 "updates": []
+               }
+             ],
+             "packageFile": "local-repo/iac/part03-key-vault/terraform.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.1.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.1.1",
+                     "newValue": "0.1.1",
+                     "releaseTimestamp": "2026-03-11T07:37:48.124Z",
+                     "newVersionAgeInDays": 7,
+                     "newMajor": 0,
+                     "newMinor": 1,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-network-ip-addresses-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-network-ip-addresses",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-network-ip-addresses/azurerm",
+                 "mostRecentTimestamp": "2026-03-11T07:37:48.124Z",
+                 "currentVersion": "0.1.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.1.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.ip_addresses.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.9.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.10.2",
+                     "newValue": "0.10.2",
+                     "releaseTimestamp": "2025-10-14T14:56:24.582Z",
+                     "newVersionAgeInDays": 154,
+                     "newMajor": 0,
+                     "newMinor": 10,
+                     "newPatch": 2,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-keyvault-vault-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-keyvault-vault",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-keyvault-vault/azurerm",
+                 "mostRecentTimestamp": "2025-10-14T14:56:24.582Z",
+                 "currentVersion": "0.9.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.9.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.key_vault.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2025-12-23T11:11:53.146Z",
+                     "newVersionAgeInDays": 85,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-operationalinsights-workspace",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "mostRecentTimestamp": "2025-12-23T11:11:53.146Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.log_analytics_workspace.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-natgateway/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.3.2",
+                     "newValue": "0.3.2",
+                     "releaseTimestamp": "2026-02-22T08:30:54.552Z",
+                     "newVersionAgeInDays": 24,
+                     "newMajor": 0,
+                     "newMinor": 3,
+                     "newPatch": 2,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-natgateway-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-natgateway/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-natgateway",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-natgateway/azurerm",
+                 "mostRecentTimestamp": "2026-02-22T08:30:54.552Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.nat_gateway.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2026-01-15T12:36:57.773Z",
+                     "newVersionAgeInDays": 61,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-networksecuritygroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-15T12:36:57.773Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.network_security_group.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-02-12T05:37:53.069Z",
+                     "newVersionAgeInDays": 34,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-privatednszone-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-privatednszone",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-privatednszone/azurerm",
+                 "mostRecentTimestamp": "2026-02-12T05:37:53.069Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               },
+               {
+                 "depName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-02-12T05:37:53.069Z",
+                     "newVersionAgeInDays": 34,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-privatednszone-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-privatednszone",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-privatednszone/azurerm",
+                 "mostRecentTimestamp": "2026-02-12T05:37:53.069Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.private_dns.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-storage-storageaccount/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.6.4",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.6.7",
+                     "newValue": "0.6.7",
+                     "releaseTimestamp": "2025-11-25T16:25:43.998Z",
+                     "newVersionAgeInDays": 112,
+                     "newMajor": 0,
+                     "newMinor": 6,
+                     "newPatch": 7,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-storage-storageaccount-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-storage-storageaccount/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-storage-storageaccount",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-storage-storageaccount/azurerm",
+                 "mostRecentTimestamp": "2025-11-25T16:25:43.998Z",
+                 "currentVersion": "0.6.4",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.6.4"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.storage_account.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.3.4",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-03-17T13:33:10.257Z",
+                     "newVersionAgeInDays": 0,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-managedidentity-userassignedidentity-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-managedidentity-userassignedidentity",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "mostRecentTimestamp": "2026-03-17T13:33:10.257Z",
+                 "currentVersion": "0.3.4",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.3.4"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.user_assigned_managed_identity.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.14.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.17.1",
+                     "newValue": "0.17.1",
+                     "releaseTimestamp": "2026-01-19T09:10:59.901Z",
+                     "newVersionAgeInDays": 58,
+                     "newMajor": 0,
+                     "newMinor": 17,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-virtualnetwork-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-virtualnetwork/azurerm",
+                 "mostRecentTimestamp": "2026-01-19T09:10:59.901Z",
+                 "currentVersion": "0.14.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.14.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/avm.virtual_network.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-regions/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.12.0",
+                     "newValue": "0.12.0",
+                     "releaseTimestamp": "2026-03-13T16:11:47.949Z",
+                     "newVersionAgeInDays": 4,
+                     "newMajor": 0,
+                     "newMinor": 12,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-regions-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-regions/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-regions",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-regions/azurerm",
+                 "mostRecentTimestamp": "2026-03-13T16:11:47.949Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/data.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.2",
+                     "newValue": "0.2.2",
+                     "releaseTimestamp": "2026-01-23T15:25:39.461Z",
+                     "newVersionAgeInDays": 53,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-resources-resourcegroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T15:25:39.461Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/main.tf"
+           },
+           {
+             "deps": [
+               {
+                 "currentValue": "~> 4.19",
+                 "depType": "required_provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-azurerm",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/azurerm",
+                 "mostRecentTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersion": "4.64.0",
+                 "currentVersionTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersionAgeInDays": 5
+               },
+               {
+                 "currentValue": "~> 3.4",
+                 "depType": "required_provider",
+                 "depName": "http",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/http",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-http",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/http",
+                 "mostRecentTimestamp": "2025-04-23T13:52:15.000Z",
+                 "currentVersion": "3.5.0",
+                 "currentVersionTimestamp": "2025-04-23T13:52:15.000Z",
+                 "currentVersionAgeInDays": 328
+               },
+               {
+                 "currentValue": "~> 3.6",
+                 "depType": "required_provider",
+                 "depName": "random",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/random",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-random",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/random",
+                 "mostRecentTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersion": "3.8.1",
+                 "currentVersionTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersionAgeInDays": 49
+               },
+               {
+                 "currentValue": "~> 1.10",
+                 "depType": "required_version",
+                 "datasource": "github-releases",
+                 "depName": "hashicorp/terraform",
+                 "extractVersion": "v(?<version>.*)$",
+                 "versioning": "hashicorp",
+                 "skipReason": "github-token-required",
+                 "updates": [],
+                 "packageName": "hashicorp/terraform"
+               },
+               {
+                 "depType": "provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "skipReason": "unspecified-version",
+                 "updates": []
+               }
+             ],
+             "packageFile": "local-repo/iac/part04-storage-account/terraform.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-bastionhost/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.8.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.9.0",
+                     "newValue": "0.9.0",
+                     "releaseTimestamp": "2025-11-24T10:03:54.052Z",
+                     "newVersionAgeInDays": 114,
+                     "newMajor": 0,
+                     "newMinor": 9,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-bastionhost-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-bastionhost/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-bastionhost",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-bastionhost/azurerm",
+                 "mostRecentTimestamp": "2025-11-24T10:03:54.052Z",
+                 "currentVersion": "0.8.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.8.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.bastion_host.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.1.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.1.1",
+                     "newValue": "0.1.1",
+                     "releaseTimestamp": "2026-03-11T07:37:48.124Z",
+                     "newVersionAgeInDays": 7,
+                     "newMajor": 0,
+                     "newMinor": 1,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-network-ip-addresses-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-network-ip-addresses/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-network-ip-addresses",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-network-ip-addresses/azurerm",
+                 "mostRecentTimestamp": "2026-03-11T07:37:48.124Z",
+                 "currentVersion": "0.1.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.1.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.ip_addresses.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.10.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.10.2",
+                     "newValue": "0.10.2",
+                     "releaseTimestamp": "2025-10-14T14:56:24.582Z",
+                     "newVersionAgeInDays": 154,
+                     "newMajor": 0,
+                     "newMinor": 10,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-keyvault-vault-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-keyvault-vault/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-keyvault-vault",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-keyvault-vault/azurerm",
+                 "mostRecentTimestamp": "2025-10-14T14:56:24.582Z",
+                 "currentVersion": "0.10.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.10.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.key_vault.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2025-12-23T11:11:53.146Z",
+                     "newVersionAgeInDays": 85,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-operationalinsights-workspace-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-operationalinsights-workspace",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-operationalinsights-workspace/azurerm",
+                 "mostRecentTimestamp": "2025-12-23T11:11:53.146Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.log_analytics_workspace.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-natgateway/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.3.2",
+                     "newValue": "0.3.2",
+                     "releaseTimestamp": "2026-02-22T08:30:54.552Z",
+                     "newVersionAgeInDays": 24,
+                     "newMajor": 0,
+                     "newMinor": 3,
+                     "newPatch": 2,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-natgateway-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-natgateway/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-natgateway",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-natgateway/azurerm",
+                 "mostRecentTimestamp": "2026-02-22T08:30:54.552Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.nat_gateway.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.1",
+                     "newValue": "0.5.1",
+                     "releaseTimestamp": "2026-01-15T12:36:57.773Z",
+                     "newVersionAgeInDays": 61,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-networksecuritygroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-networksecuritygroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-15T12:36:57.773Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.network_security_group.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-02-12T05:37:53.069Z",
+                     "newVersionAgeInDays": 34,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-privatednszone-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-privatednszone",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-privatednszone/azurerm",
+                 "mostRecentTimestamp": "2026-02-12T05:37:53.069Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               },
+               {
+                 "depName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.4.2",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-02-12T05:37:53.069Z",
+                     "newVersionAgeInDays": 34,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-privatednszone-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-privatednszone/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-privatednszone",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-privatednszone/azurerm",
+                 "mostRecentTimestamp": "2026-02-12T05:37:53.069Z",
+                 "currentVersion": "0.4.2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.4.2"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.private_dns.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-publicipaddress/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.1",
+                     "newValue": "0.2.1",
+                     "releaseTimestamp": "2026-01-23T08:59:44.705Z",
+                     "newVersionAgeInDays": 54,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 1,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-publicipaddress-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-publicipaddress/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-publicipaddress",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-publicipaddress/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T08:59:44.705Z",
+                 "currentVersion": "0.2.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.public_ip_address.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-storage-storageaccount/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.6.4",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.6.7",
+                     "newValue": "0.6.7",
+                     "releaseTimestamp": "2025-11-25T16:25:43.998Z",
+                     "newVersionAgeInDays": 112,
+                     "newMajor": 0,
+                     "newMinor": 6,
+                     "newPatch": 7,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-storage-storageaccount-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-storage-storageaccount/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-storage-storageaccount",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-storage-storageaccount/azurerm",
+                 "mostRecentTimestamp": "2025-11-25T16:25:43.998Z",
+                 "currentVersion": "0.6.4",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.6.4"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.storage_account.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.3.4",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.5.0",
+                     "newValue": "0.5.0",
+                     "releaseTimestamp": "2026-03-17T13:33:10.257Z",
+                     "newVersionAgeInDays": 0,
+                     "newMajor": 0,
+                     "newMinor": 5,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-managedidentity-userassignedidentity-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-managedidentity-userassignedidentity",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-managedidentity-userassignedidentity/azurerm",
+                 "mostRecentTimestamp": "2026-03-17T13:33:10.257Z",
+                 "currentVersion": "0.3.4",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.3.4"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.user_assigned_managed_identity.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-compute-virtualmachine/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.19.3",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.20.0",
+                     "newValue": "0.20.0",
+                     "releaseTimestamp": "2025-11-03T21:32:17.116Z",
+                     "newVersionAgeInDays": 134,
+                     "newMajor": 0,
+                     "newMinor": 20,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-compute-virtualmachine-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-compute-virtualmachine/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-compute-virtualmachine",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-compute-virtualmachine/azurerm",
+                 "mostRecentTimestamp": "2025-11-03T21:32:17.116Z",
+                 "currentVersion": "0.19.3",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.19.3"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.virtual_machine.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.16.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.17.1",
+                     "newValue": "0.17.1",
+                     "releaseTimestamp": "2026-01-19T09:10:59.901Z",
+                     "newVersionAgeInDays": 58,
+                     "newMajor": 0,
+                     "newMinor": 17,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-network-virtualnetwork-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-network-virtualnetwork/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-network-virtualnetwork/azurerm",
+                 "mostRecentTimestamp": "2026-01-19T09:10:59.901Z",
+                 "currentVersion": "0.16.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.16.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/avm.virtual_network.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-utl-regions/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.5.0",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.12.0",
+                     "newValue": "0.12.0",
+                     "releaseTimestamp": "2026-03-13T16:11:47.949Z",
+                     "newVersionAgeInDays": 4,
+                     "newMajor": 0,
+                     "newMinor": 12,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-utl-regions-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-utl-regions/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-utl-regions",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-utl-regions/azurerm",
+                 "mostRecentTimestamp": "2026-03-13T16:11:47.949Z",
+                 "currentVersion": "0.5.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.5.0"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/data.tf"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "depType": "module",
+                 "currentValue": "0.2.1",
+                 "datasource": "terraform-module",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.2",
+                     "newValue": "0.2.2",
+                     "releaseTimestamp": "2026-01-23T15:25:39.461Z",
+                     "newVersionAgeInDays": 53,
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "newPatch": 2,
+                     "updateType": "patch",
+                     "isBreaking": true,
+                     "branchName": "renovate/azure-avm-res-resources-resourcegroup-azurerm-0.x"
+                   }
+                 ],
+                 "packageName": "Azure/avm-res-resources-resourcegroup/azurerm",
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/modules/Azure/avm-res-resources-resourcegroup/azurerm",
+                 "mostRecentTimestamp": "2026-01-23T15:25:39.461Z",
+                 "currentVersion": "0.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "0.2.1"
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/main.tf"
+           },
+           {
+             "deps": [
+               {
+                 "currentValue": "~> 2.2",
+                 "depType": "required_provider",
+                 "depName": "azapi",
+                 "datasource": "terraform-provider",
+                 "packageName": "azure/azapi",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/Azure/terraform-provider-azapi",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/azure/azapi",
+                 "mostRecentTimestamp": "2025-12-04T06:37:30.000Z",
+                 "currentVersion": "2.8.0",
+                 "currentVersionTimestamp": "2025-12-04T06:37:30.000Z",
+                 "currentVersionAgeInDays": 104
+               },
+               {
+                 "currentValue": "~> 4.19",
+                 "depType": "required_provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-azurerm",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/azurerm",
+                 "mostRecentTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersion": "4.64.0",
+                 "currentVersionTimestamp": "2026-03-12T21:16:42.000Z",
+                 "currentVersionAgeInDays": 5
+               },
+               {
+                 "currentValue": "~> 3.4",
+                 "depType": "required_provider",
+                 "depName": "http",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/http",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-http",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/http",
+                 "mostRecentTimestamp": "2025-04-23T13:52:15.000Z",
+                 "currentVersion": "3.5.0",
+                 "currentVersionTimestamp": "2025-04-23T13:52:15.000Z",
+                 "currentVersionAgeInDays": 328
+               },
+               {
+                 "currentValue": "~> 3.6",
+                 "depType": "required_provider",
+                 "depName": "random",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/random",
+                 "updates": [],
+                 "versioning": "hashicorp",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/hashicorp/terraform-provider-random",
+                 "registryUrl": "https://registry.terraform.io",
+                 "homepage": "https://registry.terraform.io/providers/hashicorp/random",
+                 "mostRecentTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersion": "3.8.1",
+                 "currentVersionTimestamp": "2026-01-27T15:47:57.000Z",
+                 "currentVersionAgeInDays": 49
+               },
+               {
+                 "currentValue": "~> 1.10",
+                 "depType": "required_version",
+                 "datasource": "github-releases",
+                 "depName": "hashicorp/terraform",
+                 "extractVersion": "v(?<version>.*)$",
+                 "versioning": "hashicorp",
+                 "skipReason": "github-token-required",
+                 "updates": [],
+                 "packageName": "hashicorp/terraform"
+               },
+               {
+                 "depType": "provider",
+                 "depName": "azurerm",
+                 "datasource": "terraform-provider",
+                 "packageName": "hashicorp/azurerm",
+                 "skipReason": "unspecified-version",
+                 "updates": []
+               }
+             ],
+             "packageFile": "local-repo/iac/part05-virtual-machine/terraform.tf"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=local)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=local)
+DEBUG: repository problems (repository=local)
+       "repoProblems": ["⚠️ WARN: GitHub token is required for some dependencies"]
+DEBUG: Repository timing splits (milliseconds) (repository=local)
+       "splits": {"init": 319, "onboarding": 0, "extract": 290, "lookup": 1344, "update": 0},
+       "total": 1963
+DEBUG: Package cache statistics (repository=local)
+       "get": {"count": 19, "avgMs": 8, "medianMs": 1, "maxMs": 45, "totalMs": 149},
+       "set": {"count": 19, "avgMs": 4, "medianMs": 3, "maxMs": 13, "totalMs": 75}
+DEBUG: Datasource cache statistics (repository=local)
+       "terraform-provider": {"https://registry.terraform.io": {"hit": 0, "miss": 0, "set": 0, "skip": 4}},
+       "terraform-module": {"https://registry.terraform.io": {"hit": 0, "miss": 0, "set": 0, "skip": 14}}
+DEBUG: HTTP statistics (repository=local)
+       "hosts": {
+         "registry.terraform.io": {
+           "count": 19,
+           "reqAvgMs": 156,
+           "reqMedianMs": 153,
+           "reqMaxMs": 205,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         }
+       },
+       "requests": 19
+DEBUG: HTTP cache statistics (repository=local)
+DEBUG: Lookup statistics (repository=local)
+       "terraform-provider": {"count": 13, "avgMs": 78, "medianMs": 12, "maxMs": 322, "totalMs": 1016},
+       "terraform-module": {"count": 44, "avgMs": 81, "medianMs": 23, "maxMs": 286, "totalMs": 3569}
+DEBUG: Cache fallback URLs (repository=local)
+       "count": 0,
+       "hits": {}
+DEBUG: Git operations statistics (repository=local)
+ INFO: Repository finished (repository=local)
+       "cloned": undefined,
+       "durationMs": 1963,
+       "result": undefined,
+       "status": undefined,
+       "enabled": undefined,
+       "onboarded": undefined
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 19 file cached entries in 14ms
